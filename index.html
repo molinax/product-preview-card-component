@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="./src/assets/images/favicon-32x32.png" type="image/x-icon" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./src/css/input.css" />
+    <link rel="stylesheet" href="./src/css/output.css" />
+    <title>Frontend Mentor | Product preview card component</title>
+  </head>
+  <body class="font-montserrat text-dark-grayish-blue bg-cream">
+    <main class="min-h-screen w-[90%] max-w-sm mx-auto flex justify-center items-center lg:max-w-2xl">
+      <section class="rounded-lg bg-white overflow-hidden lg:flex">
+        <header class="lg:flex-1">
+          <picture>
+            <source 
+              media="(min-width: 1024px)"
+              srcset="./src/assets/images/image-product-desktop.jpg 1444w"
+            />
+            <img 
+              src="./src/assets/images/image-product-mobile.jpg"
+              alt="Product image"
+              class="lg:h-full"
+            />
+          </picture>
+        </header>
+        <article class="flex flex-col gap-4 p-6 lg:justify-around lg:flex-1">
+          <span class="uppercase tracking-[.2rem] text-sm">Perfume</span>
+          <h2 class="font-fraunces text-3xl text-very-dark-blue">Gabrielle Essence Eau De Parfum</h2>
+          <p class="leading-6">
+            A floral, solar and voluptuous
+            interpretation composed by Olivier Polge, Perfumer-Creator for the House of
+            CHANEL.
+          </p>
+          <div class="flex gap-3 items-center">
+            <p class="font-fraunces text-dark-cyan text-4xl">$149.99</p>
+            <p class="line-through">$169.99</p>
+          </div>
+          <button class="bg-dark-cyan p-3 rounded-lg flex items-center justify-center gap-3 transition duration-100 hover:bg-very-dark-blue">
+            <img src="./src/assets/images/icon-cart.svg" alt="Icon cart" />
+            <span class="text-white font-bold">Add to Cart</span>
+          </button>
+        </article>
+      </section>
+    </main>
+  </body>
+</html>
